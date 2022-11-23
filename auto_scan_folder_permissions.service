@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic scan folder ACLs
+
+[Service]
+ExecStart=/custom/sbin/auto_scan_folder_permissions.sh /srv/shared/Scans
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
